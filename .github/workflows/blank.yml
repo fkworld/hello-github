@@ -11,9 +11,8 @@ jobs:
     name: Create Release
     runs-on: ubuntu-latest
     steps:
-      - name: complier
-        - run: npm install
-        - run: npm run build
+      - name: C
+        run: npm install && npm run build
       - name: create release
         id: create_release
         uses: actions/create-release@v1
